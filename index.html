@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldGreen - Produk Ramah Lingkungan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #28a745;
+        }
+        .footer {
+            background-color: #28a745;
+            color: white;
+            padding: 8px;
+        }
+        .section-spacing {
+            margin-top: 30px;
+        }
+        .card img {
+            width: 100px; /* Mengubah ukuran gambar testimoni */
+            height: 100px; /* Mengubah ukuran gambar testimoni */
+            object-fit: cover; /* Agar gambar tetap proporsional */
+            border-radius: 50%; /* Agar gambar berbentuk lingkaran */
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        .nav-link:hover {
+            color: #ffffff !important;
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#"> 
+                <img src="logo.png" alt="Logo WorldGreen" width="20" height="20" class="d-inline-block align-text-top">   
+            EcoGreen
+            </a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#productsModal">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Daftar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="slide 1.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Selamat datang di WorldGreen</h5>
+                    <p>Kami berkomitmen untuk menciptakan solusi ramah lingkungan yang berdampak positif pada bumi.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="slide 2.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Produk Ramah Lingkungan</h5>
+                    <p>Menawarkan produk yang mendukung keberlanjutan bumi dan kehidupan yang lebih hijau.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Tentang Kami -->
+<div class="container my-5 section-spacing">
+    <h2 class="text-center mb-4">Cerita di Balik WorldGreen</h2>
+    <p class="tentang-kami-text text-center mx-auto" style="max-width: 800px;">
+        "Di bawah cahaya harapan yang tak pernah padam, kami berdiri untuk memberikan sentuhan alami bagi dunia. <strong>WorldGreen</strong> bukan sekadar nama, melainkan janji untuk menjaga bumi ini dengan cinta dan perhatian. Setiap produk yang kami hadirkan adalah hasil dari alam yang dipilih dengan penuh kasih, dirancang untuk menyentuh hati dan merawat tubuh tanpa mengorbankan keharmonisan alam. Kami percaya, keindahan sejati tumbuh dari ketulusan, dan keseimbangan dunia ini tercipta ketika kita peduli pada setiap langkah yang kita ambil. Dengan setiap tetes, setiap hembusan aroma, dan setiap sentuhan alami yang kami tawarkan, kami ingin menjadi bagian dari perjalanan Anda menuju kehidupan yang lebih hijau, lebih sehat, dan lebih penuh arti."
+    </p>
+</div>
+
+    <!-- Testimoni Pelanggan -->
+    <div class="container my-5 section-spacing">
+        <h2 class="text-center mb-5">Testimoni Pelanggan</h2>
+        <div class="row justify-content-center">
+            <!-- Testimoni 1 -->
+            <div class="col-md-4 col-10 mb-4">
+                <div class="card text-center" style="min-height: 220px; padding: 10px;">
+                    <img src="testimonial 1.jpg" class="testi-img" alt="Testimonial 1">
+                    <div class="card-body p-2">
+                        <h5 class="card-title" style="font-size: 1rem;">Sarah Aqila</h5>
+                        <p class="card-text" style="font-size: 0.9rem;">"Saya merasa bangga menggunakan produk ramah lingkungan ini!"</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimoni 2 -->
+            <div class="col-md-4 col-10 mb-4">
+                <div class="card text-center" style="min-height: 220px; padding: 10px;">
+                    <img src="testimonial 2.jpg" class="testi-img" alt="Testimonial 2">
+                    <div class="card-body p-2">
+                        <h5 class="card-title" style="font-size: 1rem;">Fara Alya</h5>
+                        <p class="card-text" style="font-size: 0.9rem;">"Produk ramah lingkungan yang sangat praktis dan berguna!"</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimoni 3 -->
+            <div class="col-md-4 col-10 mb-4">
+                <div class="card text-center" style="min-height: 220px; padding: 10px;">
+                    <img src="testimonial 3.jpg" class="testi-img" alt="Testimonial 3">
+                    <div class="card-body p-2">
+                        <h5 class="card-title" style="font-size: 1rem;">Chloe Emilia</h5>
+                        <p class="card-text" style="font-size: 0.9rem;">"Produk ini benar-benar membuat saya jatuh cinta sejatuh-jatuhnya!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2025 WorldGreen</p>
+        <p><a href="mailto:info@worldgreen.com" class="text-white">info@worldgreen.com</a></p>
+    </footer>
+
+   <!-- Modal Registrasi -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Daftar Akun Baru</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="name" placeholder="Masukkan nama lengkap" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Masukkan email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Masukkan password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Konfirmasi Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Konfirmasi password" required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Daftar</button>
+                </form>
+                <p class="text-center mt-3" style="font-size: 0.9rem; color: #777;">
+                    Sudah memiliki akun? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk disini</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Masuk Akun</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Modal Produk -->
+<div class="modal fade" id="productsModal" tabindex="-1" aria-labelledby="productsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productsModalLabel">Produk Kami</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Daftar Produk -->
+                <div class="d-flex flex-wrap justify-content-between" style="gap: 15px;">
+                    <!-- Produk 1 -->
+                    <div class="card" style="width: 30%; height: 22rem;">
+                        <img src="produk 1.jpg" class="card-img-top" alt="Produk 1" style="height: 7rem; object-fit: cover;">
+                        <div class="card-body p-2 d-flex flex-column">
+                            <h5 class="card-title" style="font-size: 1rem;">Krim Herbal Alami</h5>
+                            <p class="card-text" style="font-size: 0.8rem; flex-grow: 1; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                                Melembapkan kulit secara alami tanpa bahan berbahaya.
+                            </p>
+                            <span class="product-price" style="font-size: 1rem; font-weight: bold; color: #28a745;">Rp 126.000</span>
+                            <a href="#" class="btn btn-success btn-sm mt-2">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Produk 2 -->
+                    <div class="card" style="width: 30%; height: 22rem;">
+                        <img src="produk 2.jpg" class="card-img-top" alt="Produk 2" style="height: 7rem; object-fit: cover;">
+                        <div class="card-body p-2 d-flex flex-column">
+                            <h5 class="card-title" style="font-size: 1rem;">Lilin Aromaterapi</h5>
+                            <p class="card-text" style="font-size: 0.8rem; flex-grow: 1; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                                Lilin alami aroma lavender & vanilla untuk relaksasi.
+                            </p>
+                            <span class="product-price" style="font-size: 1rem; font-weight: bold; color: #28a745;">Rp 95.000</span>
+                            <a href="#" class="btn btn-success btn-sm mt-2">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Produk 3 -->
+                    <div class="card" style="width: 30%; height: 22rem;">
+                        <img src="produk 3.jpg" class="card-img-top" alt="Produk 3" style="height: 7rem; object-fit: cover;">
+                        <div class="card-body p-2 d-flex flex-column">
+                            <h5 class="card-title" style="font-size: 1rem;">Pouch</h5>
+                            <p class="card-text" style="font-size: 0.8rem; flex-grow: 1; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                                Pouch ramah lingkungan tahan lama dari serat alami.
+                            </p>
+                            <span class="product-price" style="font-size: 1rem; font-weight: bold; color: #28a745;">Rp 60.000</span>
+                            <a href="#" class="btn btn-success btn-sm mt-2">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Produk List -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
